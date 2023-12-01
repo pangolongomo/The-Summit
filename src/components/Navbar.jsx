@@ -1,14 +1,15 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className="navigation">
       <ul>
-        <a className="nav-link">The Lodge</a>
-        <a className="nav-link">Our Ski Runs</a>
-        <a className="nav-link logo">The Summit</a>
-        <a className="nav-link">How to Get Here</a>
-        <a className="nav-link">Contact</a>
+        <NavLink className="nav-link" to="/lodge">The Lodge</NavLink>
+        <NavLink className="nav-link" to="/skiruns">Our Ski Runs</NavLink>
+        <NavLink className="nav-link logo" to="/">The Summit</NavLink>
+        <NavLink className="nav-link" to="/gethere">How to Get Here</NavLink>
+        <NavLink className="nav-link" to="/contact">Contact</NavLink>
       </ul>
     </nav>
   );

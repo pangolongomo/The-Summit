@@ -5,12 +5,22 @@ import Home from "./pages/Home";
 import Layout from "./pages/Layout";
 import "./styles/starting.css";
 import "./styles/style.css";
+import Lodge from "./pages/Lodge";
+import SkyRuns from "./pages/SkyRuns";
+import GetHere from "./pages/getHere";
+import Contact from "./pages/Contact";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-    children: [{ path: "/", element: <Home /> }],
+    children: [
+      { path: "/", element: <Home /> },
+      { path: "/lodge", element: <Lodge /> },
+      { path: "/skiruns", element: <SkyRuns /> },
+      { path: "/gethere", element: <GetHere /> },
+      { path: "/contact", element: <Contact /> },
+    ],
   },
 ]);
 
