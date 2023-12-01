@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,300,400,500,600,700,800,900");
+
+a:hover {
+  color: #ffaa21;
+  transition: all 600ms ease-out;
+}
+
+a.nav-link:hover {
+  cursor: pointer;
+}
+
+.btn {
+  padding: 15px 20px;
+  background-color: #2176ff;
+  color: #fff;
+  border-radius: 5px;
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #ffaa21;
+  color: #fff;
+}
+
+.activity {
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.activity:hover {
+  background-color: #ffaa21;
+  color: #fff;
+}
